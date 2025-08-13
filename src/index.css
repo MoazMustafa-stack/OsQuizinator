@@ -23,10 +23,14 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.5;
   color: var(--text-color);
-  background-color: var(--light-bg);
+  /* Make background transparent so finisher-header shows */
+  background-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Ensure app content sits above finisher-header */
+#root { position: relative; z-index: 1; }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {

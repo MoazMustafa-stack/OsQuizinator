@@ -213,7 +213,6 @@ function App() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'var(--light-bg)',
         padding: '1rem',
       }}
     >
@@ -242,7 +241,7 @@ function App() {
         <div className="flex justify-between items-center mb-6">
           <div>
             <h1>OS Quiz</h1>
-            <p className="text-secondary-color">Question {current + 1} of {QUESTIONS.length}</p>
+            <p className="text-secondary-color">Attempted {answers.filter(a => a !== null).length} of {QUESTIONS.length}</p>
           </div>
           <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
             Time: {fmtTime(elapsed)}
