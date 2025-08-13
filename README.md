@@ -1,5 +1,10 @@
 # OsQuizinator
 
+[![Take the Quiz](https://img.shields.io/badge/Start%20Quiz-Click%20Here-brightgreen?style=for-the-badge)](https://os-quizinator.vercel.app/)
+
+**Test your Operating Systems knowledge instantly:**  
+➡ **[Click here to try the live quiz now!](https://os-quizinator.vercel.app/)**
+
 A clean, responsive React + TypeScript quiz app focused on Operating Systems concepts. It features immediate answer feedback, auto-advance, and a clear results review screen.
 
 ## Features
@@ -14,20 +19,13 @@ A clean, responsive React + TypeScript quiz app focused on Operating Systems con
 
 ## Tech Stack
 
-- React + TypeScript + Vite
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
+
+- **React + TypeScript + Vite**
 - Minimal custom CSS (no Tailwind required) using CSS variables defined in `src/index.css`.
-
-## Project Structure
-
-```
-OsQuizinator/
-├─ src/
-│  ├─ App.tsx        # Main quiz logic and UI
-│  ├─ index.css      # Global CSS variables, base styles, utilities
-│  ├─ App.css        # Card/host styles
-│  └─ main.tsx       # Vite entry
-└─ README.md
-```
 
 ## Behavior Summary
 
