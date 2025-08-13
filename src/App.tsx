@@ -257,6 +257,27 @@ function App() {
           ></div>
         </div>
 
+        {/* Submit*/}
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={submitQuiz}
+            disabled={answers[current] === null}
+            style={{
+              padding: '10px 16px',
+              borderRadius: 8,
+              border: '1px solid',
+              borderColor: answers[current] === null ? 'var(--border-color)' : 'var(--success-color)',
+              background: answers[current] === null ? '#e5e7eb' : 'var(--success-color)',
+              color: answers[current] === null ? '#6b7280' : '#ffffff',
+              cursor: answers[current] === null ? 'not-allowed' : 'pointer',
+              fontWeight: 700,
+              minWidth: 110,
+            }}
+          >
+            Submit
+          </button>
+        </div>
+
         {/* Question */}
         <div className="mb-6">
           <p className="text-secondary-color mb-1">{currentQuestion.module}</p>
@@ -377,23 +398,6 @@ function App() {
             Question {current + 1} of {QUESTIONS.length}
           </div>
 
-          <button
-            onClick={submitQuiz}
-            disabled={answers[current] === null}
-            style={{
-              padding: '10px 16px',
-              borderRadius: 8,
-              border: '1px solid',
-              borderColor: answers[current] === null ? 'var(--border-color)' : 'var(--success-color)',
-              background: answers[current] === null ? '#e5e7eb' : 'var(--success-color)',
-              color: answers[current] === null ? '#6b7280' : '#ffffff',
-              cursor: answers[current] === null ? 'not-allowed' : 'pointer',
-              fontWeight: 700,
-              minWidth: 110,
-            }}
-          >
-            Submit
-          </button>
 
           <button
             onClick={() => setCurrent(prev => Math.min(QUESTIONS.length - 1, prev + 1))}
